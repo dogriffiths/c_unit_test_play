@@ -40,7 +40,7 @@ CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/
 CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-g
+CMAKE_C_FLAGS_DEBUG:STRING=-g -coverage
 
 //Flags used by the C compiler during MINSIZEREL builds.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
