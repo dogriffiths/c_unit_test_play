@@ -24,9 +24,9 @@ void test_HashOfString_should_NotBeGreaterThanLIMIT(void)
     TEST_ASSERT_LESS_THAN_INT(LIMIT, hash("ABCDEF"));
 }
 
-void test_HashOfString_should_NotBeNegatve(void)
+void test_HashOfString_should_NotBeNegative(void)
 {
-    TEST_ASSERT_LESS_THAN_INT(hash("Some string"), 0);
+    TEST_ASSERT_GREATER_OR_EQUAL(0, hash("Some string"));
 }
 
 void test_Note_should_IncrementConcordance(void)
@@ -49,7 +49,7 @@ int main(void)
     RUN_TEST(test_HashOfEmptyString_should_BeZero);
     RUN_TEST(test_HashOfSingleChar_should_ReturnCharCode);
     RUN_TEST(test_HashOfString_should_NotBeGreaterThanLIMIT);
-    RUN_TEST(test_HashOfString_should_NotBeNegatve);
+    RUN_TEST(test_HashOfString_should_NotBeNegative);
     RUN_TEST(test_Note_should_IncrementConcordance);
     return UNITY_END();
 }
