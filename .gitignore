@@ -7,3 +7,4 @@ test_app
 *.o
 test_app2
 coverage
+CMakeCache.txt
