@@ -8,3 +8,4 @@ test_app
 test_app2
 coverage
 CMakeCache.txt
+CMakeFiles/CMakeOutput.log
