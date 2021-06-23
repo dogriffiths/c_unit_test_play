@@ -499,6 +499,19 @@ ExperimentalMemCheck/fast:
 .PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
+# Target rules for targets named test_app2
+
+# Build rule for target.
+test_app2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_app2
+.PHONY : test_app2
+
+# fast build rule for target.
+test_app2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/build
+.PHONY : test_app2/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousConfigure
 
 # Build rule for target.
@@ -636,6 +649,7 @@ greetings.o: greetings.c.o
 # target to build an object file
 greetings.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/greetings.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/greetings.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/greetings.c.o
 .PHONY : greetings.c.o
 
@@ -646,6 +660,7 @@ greetings.i: greetings.c.i
 # target to preprocess a source file
 greetings.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/greetings.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/greetings.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/greetings.c.i
 .PHONY : greetings.c.i
 
@@ -656,6 +671,7 @@ greetings.s: greetings.c.s
 # target to generate assembly for a file
 greetings.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/greetings.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/greetings.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/greetings.c.s
 .PHONY : greetings.c.s
 
@@ -713,6 +729,66 @@ test/test_greetings.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/test/test_greetings.c.s
 .PHONY : test/test_greetings.c.s
 
+test/test_utils.o: test/test_utils.c.o
+
+.PHONY : test/test_utils.o
+
+# target to build an object file
+test/test_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/test/test_utils.c.o
+.PHONY : test/test_utils.c.o
+
+test/test_utils.i: test/test_utils.c.i
+
+.PHONY : test/test_utils.i
+
+# target to preprocess a source file
+test/test_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/test/test_utils.c.i
+.PHONY : test/test_utils.c.i
+
+test/test_utils.s: test/test_utils.c.s
+
+.PHONY : test/test_utils.s
+
+# target to generate assembly for a file
+test/test_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/test/test_utils.c.s
+.PHONY : test/test_utils.c.s
+
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app2.dir/build.make CMakeFiles/test_app2.dir/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/utils.c.s
+.PHONY : utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -756,6 +832,7 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... Unity"
 	@echo "... test_app"
+	@echo "... test_app2"
 	@echo "... unity"
 	@echo "... untitled7"
 	@echo "... Unity/src/unity.o"
@@ -770,6 +847,12 @@ help:
 	@echo "... test/test_greetings.o"
 	@echo "... test/test_greetings.i"
 	@echo "... test/test_greetings.s"
+	@echo "... test/test_utils.o"
+	@echo "... test/test_utils.i"
+	@echo "... test/test_utils.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

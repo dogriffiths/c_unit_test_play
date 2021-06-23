@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/davidg/CLionProjects/untitled7/greetings.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/untitled7.dir/greetings.c.o"
   "/Users/davidg/CLionProjects/untitled7/main.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/untitled7.dir/main.c.o"
+  "/Users/davidg/CLionProjects/untitled7/utils.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/untitled7.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

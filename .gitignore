@@ -4,3 +4,5 @@ Testing
 *.a
 untitled7
 test_app
+*.o
+test_app2

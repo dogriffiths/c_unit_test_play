@@ -147,6 +147,38 @@
 					<DistClean command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test_app2">
+				<Option output="/Users/davidg/CLionProjects/untitled7/test_app2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/davidg/CLionProjects/untitled7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/davidg/CLionProjects/untitled7/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 test_app2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_app2/fast">
+				<Option output="/Users/davidg/CLionProjects/untitled7/test_app2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/davidg/CLionProjects/untitled7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/davidg/CLionProjects/untitled7/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 test_app2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/davidg/CLionProjects/untitled7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test_app">
 				<Option output="/Users/davidg/CLionProjects/untitled7/test_app" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/davidg/CLionProjects/untitled7"/>
@@ -254,16 +286,31 @@
 		</Unit>
 		<Unit filename="/Users/davidg/CLionProjects/untitled7/greetings.c">
 			<Option target="untitled7"/>
+			<Option target="test_app2"/>
 			<Option target="test_app"/>
 		</Unit>
 		<Unit filename="/Users/davidg/CLionProjects/untitled7/greetings.h">
 			<Option target="untitled7"/>
+			<Option target="test_app2"/>
 			<Option target="test_app"/>
 		</Unit>
 		<Unit filename="/Users/davidg/CLionProjects/untitled7/main.c">
 			<Option target="untitled7"/>
 		</Unit>
 		<Unit filename="/Users/davidg/CLionProjects/untitled7/test/test_greetings.c">
+			<Option target="test_app"/>
+		</Unit>
+		<Unit filename="/Users/davidg/CLionProjects/untitled7/test/test_utils.c">
+			<Option target="test_app2"/>
+		</Unit>
+		<Unit filename="/Users/davidg/CLionProjects/untitled7/utils.c">
+			<Option target="untitled7"/>
+			<Option target="test_app2"/>
+			<Option target="test_app"/>
+		</Unit>
+		<Unit filename="/Users/davidg/CLionProjects/untitled7/utils.h">
+			<Option target="untitled7"/>
+			<Option target="test_app2"/>
 			<Option target="test_app"/>
 		</Unit>
 		<Unit filename="/Users/davidg/CLionProjects/untitled7/CMakeLists.txt">

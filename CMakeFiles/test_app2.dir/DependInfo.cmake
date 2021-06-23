@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/davidg/CLionProjects/untitled7/greetings.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app.dir/greetings.c.o"
-  "/Users/davidg/CLionProjects/untitled7/test/test_greetings.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app.dir/test/test_greetings.c.o"
-  "/Users/davidg/CLionProjects/untitled7/utils.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app.dir/utils.c.o"
+  "/Users/davidg/CLionProjects/untitled7/greetings.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app2.dir/greetings.c.o"
+  "/Users/davidg/CLionProjects/untitled7/test/test_utils.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app2.dir/test/test_utils.c.o"
+  "/Users/davidg/CLionProjects/untitled7/utils.c" "/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app2.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

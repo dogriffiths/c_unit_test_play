@@ -9,3 +9,6 @@ CMakeFiles/test_app.dir/test/test_greetings.c.o: Unity/src/unity_internals.h
 CMakeFiles/test_app.dir/test/test_greetings.c.o: greetings.h
 CMakeFiles/test_app.dir/test/test_greetings.c.o: test/test_greetings.c
 
+CMakeFiles/test_app.dir/utils.c.o: utils.c
+CMakeFiles/test_app.dir/utils.c.o: utils.h
+

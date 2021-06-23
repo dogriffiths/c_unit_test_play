@@ -29,6 +29,7 @@
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/NightlyUpdate.dir
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/ExperimentalMemCheck.dir
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/edit_cache.dir
+/Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app2.dir
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/ContinuousConfigure.dir
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/NightlyMemoryCheck.dir
 /Users/davidg/CLionProjects/untitled7/CMakeFiles/test_app.dir
