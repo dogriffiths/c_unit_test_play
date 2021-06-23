@@ -3,20 +3,22 @@ project(untitled7 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled7 main.c greetings.c)
+file(GLOB sources "${PROJECT_SOURCE_DIR}/*.c")
+add_executable(untitled7 ${sources})
 
+# Add unit testing
 include(CTest)
 add_subdirectory(Unity)
 add_library(Unity STATIC Unity/src/unity.c)
 target_include_directories(Unity PUBLIC src)
-add_executable(test_app test_greetings.c greetings.c)
+
+file(GLOB testables "${PROJECT_SOURCE_DIR}/*.c")
+list(REMOVE_ITEM testables "${PROJECT_SOURCE_DIR}/main.c")
+file(GLOB test_sources "${PROJECT_SOURCE_DIR}/test/*.c")
+message("Sources are ${testables}")
+
+add_executable(test_app ${test_sources} ${testables})
 
 target_link_libraries(test_app Unity)
 
 add_test(run_tests test_app)
-
-#enable_testing()
-#include_directories(${CMAKE_SOURCE_DIR}/Unity/src)
-
-#file(GLOB sources "${PROJECT_SOURCE_DIR}/Unity/src/*.c")
-#add_executable(run_tests test_greetings.c greetings.c ${sources})

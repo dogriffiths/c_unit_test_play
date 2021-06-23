@@ -1,8 +1,5 @@
-//#include "Unity/src/unity.h"
-//#include <unity.h>
-//#include "Unity/src/unity.h"
-#include "greetings.h"
-#include "Unity/src/unity.h"
+#include "../greetings.h"
+#include "../Unity/src/unity.h"
 
 void setUp(void) {
     // set stuff up here
