@@ -9,6 +9,11 @@ void tearDown(void) {
     // clean stuff up here
 }
 
+void test_HashOfEmptyString_should_BeZero(void)
+{
+    TEST_ASSERT_EQUAL_INT(0, hash(""));
+}
+
 void test_HashOfSingleChar_should_ReturnCharCode(void)
 {
     TEST_ASSERT_EQUAL_INT(65, hash("A"));
@@ -41,6 +46,7 @@ void test_Note_should_IncrementConcordance(void)
 int main(void)
 {
     UNITY_BEGIN();
+    RUN_TEST(test_HashOfEmptyString_should_BeZero);
     RUN_TEST(test_HashOfSingleChar_should_ReturnCharCode);
     RUN_TEST(test_HashOfString_should_NotBeGreaterThanLIMIT);
     RUN_TEST(test_HashOfString_should_NotBeNegatve);
